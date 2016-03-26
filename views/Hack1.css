@@ -1,0 +1,28 @@
+	@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+
+h1 { font-family: Algerian; color: red; font-size: 27pt; }
+.h { font-family: sans-serif, Arial, Helvetica; 
+font-style: level; color: green; font-size: 20pt; }
+
+body{ font-family: sans-serif, Arial, Helvetica; 
+font-style: level; color: olive; font-size: 17pt; }
+
+p { font-family: broadway; 
+font-style: normal; text-align: center; color: black; font-size: 70pt; }
+
+table, td { text-align: center; border: 1px solid black}
+
+table { width: 70%; color: purple; font-size: 12pt; font-family: imprint MT shadow;
+border-color: blue;}
+
+nav p{ font-family: Castellar; font-size: 13pt; 
+font-style: normal; color: lime; font-weight: bold; }
+
+div{ font-family: Imprint MT Shadow; font-size: 10pt; color: lime;
+font-weight: bolder; }
+body{ background-color: transparent; background: transparent url(printer.gif); background-repeat: repeat-x; }
+
+
+
