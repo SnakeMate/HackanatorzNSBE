@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	  "start": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,15 @@
     "url": "https://github.com/SnakeMate/HackanatorzNSBE/issues"
   },
   "homepage": "https://github.com/SnakeMate/HackanatorzNSBE#readme",
-	"dependencies": {
-	    "body-parser": "^1.14.1",
-	    "ejs": "^2.3.4",
-	    "express": "^4.13.3"
-	}
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect": "^3.4.1",
+    "connect-mongo": "0.3.x",
+    "cookie-session": "^2.0.0-alpha.1",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "hat": "0.0.3",
+    "winston": "^2.2.0"
+  }
 }

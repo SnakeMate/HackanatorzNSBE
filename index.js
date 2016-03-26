@@ -3,14 +3,20 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
+var cookie_session = require('cookie-session');
+var hut = require('hat');
+//var connectApp = require('connect');
 
 var app = express();
+app.use(cookie_session({keys: [null]}))
+//var mongoStore = require('connect-mongo')(app);
+
 
 //define our render engine. It will allow use to embed Javascript in our HTML page. file extention is .ets
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-//allows our app to arse files with easy
+//allows our app to parse files with easy
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
