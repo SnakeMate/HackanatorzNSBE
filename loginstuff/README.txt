@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/boudra/pen/YXzLBN.
+A Pen created at CodePen.io. You can find this one at http://codepen.io/motorlatitude/pen/JFkro.
 
- A simple animated login form
+ Just playing around with login forms
