@@ -33,6 +33,7 @@
     "express": "^4.13.3",
     "express-session": "^1.13.0",
     "hat": "0.0.3",
+    "supertest": "^1.2.0",
     "winston": "^2.2.0"
   }
 }

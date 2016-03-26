@@ -3,8 +3,39 @@
 <title>Bank Account Information</title>
 <body style="background-color:MediumSpringGreen">
 
-<img src="pig.jpg" alt="Piggy Bank" style="width:304px;height:228px;">
-<img src="money-fan.jpg" alt="Piggy Bank" style="width:304px;height:228px;">
+<a href="bankPage.html"> Money Matters </a> <pre style="display:inline">       </pre>
+<a href="bankPage.html"> Bank Statement </a>
+<br>
+<img src="hero_bar_chart.png" alt="Progress Bar">
+
+<p> Hi Joseph, you're looking great today! </p>
+
+<a href="bankPage.html">Checking Account</a> <pre style="display:inline">       </pre>
+<a href="bankPage.html">Savings Account </a>  <pre style="display:inline">     </pre>
+<a href="bankPage.html">Transfer Money</a> <pre style="display:inline">     </pre>
+<br>
+<br>
+<img src="bankStatement.png" alt="Progress Bar">
+
+<script src="jquery-2.2.2.js"></script>
+<script>
+
+$.ajax({
+    url: 'http://api.reimaginebanking.com/atms?key=a7f1ceebc2da3b3d7184e28df18f5d0b',
+    success: function(results){
+        console.log(results);
+        console.log(results.data[1]);
+        var apikey = '40eba2d0de86d07544dbdb0abe28db05';
+        console.log('bills demo')
+		var billAccount = bills.initWithKey(apikey);
+		var accID = '55e94a6cf8d8770528e6196d';
+		var custID = '55e94a6af8d8770528e60e64';
+        var billID = billAccount.getAllByCustomerId(custID)[0]._id;
+        consol.log(billAccount.getAllByCustomerId(custID)[0]._id)
+    }
+});
+
+</script>
 
 </body>
 </html>
