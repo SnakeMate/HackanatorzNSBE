@@ -56,6 +56,16 @@ router.route('/')
 
 		resp.render('home_page');
 	});
+
+	// router.route('/dashboard').get(function(req, resp){
+	// 	logger.info('GET>>> dashboard')
+	// 	resp.render('home_page');
+	// }).post(function(req, resp){
+	// 	logger.info('POST>>> /dashboard');
+	// 	//create user and store information
+	//
+	// 	resp.render('home_page');
+	// });
 // router.route('/register')
 // 	.get(function(request,response){
 // 	response.render('register');
