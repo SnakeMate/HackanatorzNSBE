@@ -44,7 +44,7 @@ router.route('/')
 		logger.info('Questionnaire completed');
 		//create user and store information
 
-		resp.render('home_page');
+		resp.render('bankPage');
 	});
 
 	router.route('/dashboard').get(function(req, resp){
