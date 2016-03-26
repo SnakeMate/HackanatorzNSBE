@@ -9,13 +9,11 @@ var LogIn = {
 	validateLoginInfo: function (username, password) {
 	logger.info('Log In: ' + 'USERNAME: ' + username + " PASSWORD: " + password);
 	logger.info(JSON.stringify(USER_DB));
- 	USER_DB.users.map(
-		function(userInDB){
-			if (userInDB.name === username){
-				return userInDB.password === password;
+ 	for (var i = 0; i < USER_DB.users.length; i++){
+			if (USER_DB.name === username){
+				return USER_DB.password === password;
 			}
 		}
-	);
 
 	return false;
 	}

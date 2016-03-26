@@ -23,7 +23,13 @@ router.route('/login')
 		}
 	}).get(function(req, resp){
 		logger.info("reached URL");
-		logger.info(LogIn.validateLoginInfo(req.param('username'), req.param('password')));
+		var loggedOn = logger.info(LogIn.validateLoginInfo(req.param('username'), req.param('password')));
+		if (loggedOn){
+			resp.send("YOU ARE LOGGED ON");
+		}
+		else{
+			resp.render('/login');
+		}
 	});
 // router.route('/register')
 // 	.get(function(request,response){
