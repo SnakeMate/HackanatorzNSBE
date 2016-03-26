@@ -4,41 +4,30 @@
 <h1>Manoj Seeram's Assignment 7</h1>
 <body style="background-color:MediumSpringGreen">
 
-<form id="input" action ="questionnaire.html" onsubmit="return validateForm()" method="post">
+<form id="input" action ="questionnaire.html" method="get">
 	First Name:	<input type="text" id="first" value="Joe" required> <br>
 	Last Name: <input type="text" id="last" value="Smith" required> <br>
 	How often do you get your paycheck? 
-	<select>
+	<select id="paycheck-time">
 	  <option value="daily">Daily</option>
 	  <option value="weekly">Weekly</option>
 	  <option value="bi-weekly">Bi-Weekly</option>
 	  <option value="monthly">Monthly</option>
 	  <option value="yearly">Yearly</option>
 	</select> <br>
-	How much is that paycheck AFTER taxes? $<input type="text" 
+	How much is that paycheck AFTER taxes? $<input type="number" 
 	id="paycheck" value="800" required> <br>
 	Do you have a bank account? 
-	<select>
+	<select id="bank">
 	  <option value="account_yes">Yes</option>
 	  <option value="account_no">No</option>
 	</select> <br>
-	What's your monthly rent/housing payment? $<input type="text" 
+	What's your monthly rent/housing payment? $<input type="number" 
 	id="house" value="650" required> <br>
-	What's your monthly car payment? $<input type="text" 
+	What's your monthly car payment? $<input type="number" 
 	id="car" value="300" required> <br>
 	<input type="submit" value="Submit">
 </form>
-
-<script>
-
-function validateForm() {
-	var paycheck = document.getElementById("paycheck").value;
-	if (paycheck)
-	
-	return false;
-}
-
-</script>
 
 </body>
 </html>
