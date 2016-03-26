@@ -1,0 +1,26 @@
+{
+  "name": "finlit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnakeMate/HackanatorzNSBE.git"
+  },
+  "keywords": [
+    "financial",
+    "literacy",
+    "accounting",
+    "money",
+    "management"
+  ],
+  "author": "Abdoulaye Diallo, Breanna Johnson, Manoj Seeram, Mikekely John Elie, Modupe Theko Lekena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnakeMate/HackanatorzNSBE/issues"
+  },
+  "homepage": "https://github.com/SnakeMate/HackanatorzNSBE#readme"
+}
