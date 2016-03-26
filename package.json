@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	  "start": "node index.js",
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/SnakeMate/HackanatorzNSBE/issues"
   },
-  "homepage": "https://github.com/SnakeMate/HackanatorzNSBE#readme"
+  "homepage": "https://github.com/SnakeMate/HackanatorzNSBE#readme",
+	"dependencies": {
+	    "body-parser": "^1.14.1",
+	    "ejs": "^2.3.4",
+	    "express": "^4.13.3"
+	}
 }
