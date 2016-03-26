@@ -10,22 +10,22 @@ var logger = require('../src/logger.js');
 // });
 
 router.route('/')
-	.put(function(req, resp){
+	.post(function(req, resp){
 		logger.info('POST>>> login page');
-		if (LogIn.validateLoginInfo(req.username, req.password)){
+		if (LogIn.validateLoginInfo(req.body.username, req.body.password)){
 			//when the user entered the valid information
 
-			req.key[0] = hat();
+		//	req.key[0] = hat();
 			logger.info("Logged in");
 			//get the users information
 			//test if the user has completed the questionaire
 			//if so render homepage else render quesitonaire
-			resp.render('/questionaire');
+			resp.render('questionnaire');
 		}
 		else{
 			//when the user entered the wrong information
-			logger.info("PUT>>> login page | WRONG password");
-			resp.render('login');
+			logger.info("post>>> login page | WRONG password");
+			resp.render('Hack3');
 		}
 	}).get(function(req, resp){
 		logger.info("GET>>> reached URL");
@@ -34,17 +34,27 @@ router.route('/')
 		// 	resp.send("YOU ARE LOGGED ON");
 		// }
 		// else{
-			resp.render('login');
+			resp.render('Hack3');
 		// }
 	});
 
-	router.route('/quesitonnaire').get(function(req, resp){
+	router.route('/questionnaire').get(function(req, resp){
 		resp.render('questionnaire');
-	}).put(function(req, resp){
-		logger.info('Questionaire completed');
+	}).post(function(req, resp){
+		logger.info('Questionnaire completed');
 		//create user and store information
 
-		resp.render('/dashboard');
+		resp.render('home_page');
+	});
+
+	router.route('/dashboard').get(function(req, resp){
+		logger.info('GET>>> dashboard')
+		resp.render('home_page');
+	}).post(function(req, resp){
+		logger.info('POST>>> /dashboard');
+		//create user and store information
+
+		resp.render('home_page');
 	});
 // router.route('/register')
 // 	.get(function(request,response){

@@ -8,7 +8,7 @@ var cookie_session = require('cookie-session');
 //var connectApp = require('connect');
 
 var app = express();
-app.use(cookie_session({keys: [null]}))
+//app.use(cookie_session({keys: [null]}))
 //var mongoStore = require('connect-mongo')(app);
 
 
@@ -18,7 +18,7 @@ app.set('view engine', 'ejs');
 
 //allows our app to parse files with easy
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('views'));
 app.use('/',routes);
