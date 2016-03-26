@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>Homepage</title>
+<h1>Welcome </h1>
+<h2>Please just fill out this quick questionnaire to continue. </h2>
+<body style="background-color:MediumSpringGreen">
+
+<form id="input" action ="questionnaire.html" method="get">
+	First Name:	<input type="text" id="firstName" value="Joe" required> <br>
+	Last Name: <input type="text" id="lastName" value="Smith" required> <br>
+	How often do you get your paycheck? 
+	<select id="paycheckInterval">
+	  <option value="daily">Daily</option>
+	  <option value="weekly">Weekly</option>
+	  <option value="bi-weekly">Bi-Weekly</option>
+	  <option value="monthly">Monthly</option>
+	  <option value="yearly">Yearly</option>
+	</select> <br>
+	How much is that paycheck AFTER taxes? $<input type="number" 
+	id="paycheck" value="800" required> <br>
+	Do you have a bank account? 
+	<select id="bankAccountBoolean">
+	  <option value="account_yes">Yes</option>
+	  <option value="account_no">No</option>
+	</select> <br>
+	What's your monthly rent/housing payment? $<input type="number" 
+	id="housingPayment" value="650" required> <br>
+	What's your monthly car payment? $<input type="number" 
+	id="carPayment" value="300" required> <br>
+	<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

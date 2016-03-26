@@ -4,7 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var cookie_session = require('cookie-session');
-var hut = require('hat');
+//var hut = require('hat');
 //var connectApp = require('connect');
 
 var app = express();
@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
 app.use(express.static('views'));
-app.use('/',routes)
+app.use('/',routes);
 
 //SHOULD BE THE LAST ROUTE IN FILE
 
